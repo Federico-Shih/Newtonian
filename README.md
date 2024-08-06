@@ -1,5 +1,15 @@
 
 # Newtonian
+Newtonian is our implementation of a basic language using Bison and Flex for grammar generation. Newtonian parses our custom grammar to generate common physic exercise graphics, supporting angles, shapes, labels, nesting, etc. It's heavily inspired by component based rendering using children components to base their next starting position, for example, a cube on a inclined plane. It was created for a course in Automata and Language Theory.
+
+This project uses a frontend-backend architecture:
+## Frontend
+- Syntactic analysis to validate grammar using Bison
+- Lexical analysis to emit grammar tokens using Flex
+## Backend
+- Semantic analysis that receives the flex tokens to generate a  abstract syntax tree (AST)
+- Code generation that uses the AST to generate SVGs.
+
 
 # Autoría
   * Manzur Matías, 62498
